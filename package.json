@@ -1,0 +1,11 @@
+{
+  "name": "rels-i18n",
+  "dependencies": {
+    "underscore": "latest"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "mocha": "latest",
+    "gulp-mocha": "latest"
+  }
+}
