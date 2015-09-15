@@ -1,6 +1,7 @@
 {
   "name": "rels-i18n",
   "version": "0.0.0",
+  "main": "./lib/rels-i18n.js",
   "dependencies": {
     "underscore": "latest"
   },
