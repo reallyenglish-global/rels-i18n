@@ -49,7 +49,7 @@ describe('i18n', function() {
       });
     });
 
-    it('adds', function() {
+    it('contains all added translations', function() {
       assert.equal('You are awesome!', i18n.t('compliment'));
       assert.equal('What is your name?', i18n.t('ask_name'));
     });
