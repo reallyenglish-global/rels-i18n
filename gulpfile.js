@@ -1,8 +1,5 @@
 var gulp = require('gulp');
-var mocha = require('gulp-mocha');
+var requireDir = require('require-dir');
+var tasks = requireDir('./gulp');
 
-gulp.task('default', function () {
-  return gulp.src('test/i18n-test.js', {read: false})
-    // gulp-mocha needs filepaths so you can't have any plugins before it
-    .pipe(mocha({reporter: 'spec'}));
-});
+gulp.task('default', ['test']);
