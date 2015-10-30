@@ -20,5 +20,4 @@ gulp.task('test-build', ['test-vendor'], function() {
   return bundle.bundle()
     .pipe(source('spec-manifest.js'))
     .pipe(gulp.dest('test'));
-
 });
