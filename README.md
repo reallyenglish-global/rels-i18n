@@ -13,7 +13,8 @@ Proof of concept for Rails i18n -> JS i18n
 ```javascript
 var i18n = require("rels-i18n");
 
-i18n.setLocaleData({
+
+i18n.addLocaleData({
   'en': {
     'continue': 'Continue',
     'homepage': {
@@ -34,4 +35,10 @@ var i18n = require("rels-i18n");
 i18n.t("continue");
 i18n.t("homepage.greeting", {name: "Stephen"});
 i18n.t("homepage.inbox", {count: 1});
+```
+
+To set a different language use:
+
+```
+i18.setLocale('ja')
 ```
