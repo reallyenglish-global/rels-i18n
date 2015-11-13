@@ -18,5 +18,9 @@
     "resolve" : "latest",
     "browser-sync": "latest",
     "underscore": "latest"
-  }
+  },
+  "engineStrict" : true,
+  "engines": {
+    "node": ">=4.0.0"
+  },
 }
