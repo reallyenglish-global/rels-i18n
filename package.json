@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "main": "./lib/rels-i18n.js",
   "dependencies": {
-    "jquery": "latest"
+    "jquery": "latest",
+    "underscore": "latest"
   },
   "devDependencies": {
     "gulp": "latest",
