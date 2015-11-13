@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "main": "./lib/rels-i18n.js",
   "dependencies": {
-    "jquery": "latest",
-    "underscore": "latest"
+    "jquery": "latest"
   },
   "devDependencies": {
     "gulp": "latest",
@@ -17,6 +16,7 @@
     "glob": "latest",
     "browserify": "latest",
     "resolve" : "latest",
-    "browser-sync": "latest"
+    "browser-sync": "latest",
+    "underscore": "latest"
   }
 }
