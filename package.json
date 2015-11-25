@@ -2,6 +2,8 @@
   "name": "rels-i18n",
   "version": "0.0.0",
   "main": "./lib/rels-i18n.js",
+  "repository": "https://github.com/reallyenglish/rels-i18n",
+  "license": "UNLICENSED",
   "dependencies": {
     "jquery": "latest"
   },
@@ -19,7 +21,7 @@
     "browser-sync": "latest",
     "underscore": "latest"
   },
-  "engineStrict" : true,
+  "engine-strict" : true,
   "engines": {
     "node": ">=4.0.0"
   }
