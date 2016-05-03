@@ -19,7 +19,8 @@
     "browserify": "latest",
     "resolve" : "latest",
     "browser-sync": "latest",
-    "underscore": "latest"
+    "underscore": "latest",
+    "rels-gulp": "git+ssh://git@github.com/reallyenglish/rels-gulp#ew_additional_clean"
   },
   "engine-strict" : true,
   "engines": {
