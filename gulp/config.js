@@ -7,7 +7,9 @@ module.exports = {
   shared: {
     paths: {
       alljs: ['lib/**/*.js'],
-      test: ['test/**/*.spec.js']
+      alltest: ['test/**/*.spec.js'],
+      testSupport: ['test/support/**/*.js'],
+      testManifest: ['test/spec-manifest']
     },
     vendor: {},
     browserSync: {
@@ -21,10 +23,6 @@ module.exports = {
   },
 
   test: {
-    watched: {
-      support: [test + 'support/**/*.js'],
-      manifest: [test + 'spec-manifest']
-    },
     build: {
       source: 'spec-manifest.js',
       bundle: {
