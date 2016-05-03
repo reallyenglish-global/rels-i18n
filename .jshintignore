@@ -1,0 +1,5 @@
+test/vendor.js
+test/spec-manifest.js
+demo/rels-lib.js
+demo/vendor.js
+demo/demo.js

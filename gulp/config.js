@@ -28,14 +28,15 @@ module.exports = {
   },
   test: {
     watched: {
+      support: [test +'support/**/*.js'],
       manifest: [test + 'spec-manifest']
     },
     build: {
       source: 'spec-manifest.js',
-      // bundle: {
-      //   entries: [test + 'support/setup.js', test + 'lib/**/*.spec.js'
-      //   ]
-      // }
+      bundle: {
+        entries: [test + 'support/setup.js', test + '/**/*.spec.js'
+        ]
+      }
     },
     vendor: {
       source: 'vendor.js',
