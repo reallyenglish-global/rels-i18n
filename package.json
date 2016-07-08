@@ -1,8 +1,12 @@
 {
   "name": "rels-i18n",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "rels-i18n",
   "main": "./lib/rels-i18n.js",
-  "repository": "https://github.com/reallyenglish/rels-i18n",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reallyenglish/rels-i18n"
+  },
   "license": "UNLICENSED",
   "dependencies": {
     "jquery": "latest"
@@ -19,10 +23,30 @@
     "browserify": "latest",
     "resolve" : "latest",
     "browser-sync": "latest",
-    "underscore": "latest"
+    "underscore": "latest",
+    "ghooks": "^1.3.2",
+    "last-release-git-tag": "latest",
+    "semantic-release": "^4.3.5",
+    "validate-commit-msg": "^2.6.1"    
   },
   "engine-strict" : true,
   "engines": {
     "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "semantic-release": "semantic-release pre && semantic-release post"
+  },
+  "release": {
+    "getLastRelease": "./node_modules/last-release-git-tag/index.js",
+    "debug": false
+  },
+  "config": {
+    "validate-commit-msg": {
+      "helpMessage": "Valid types are: feat, fix, docs, style, refactor, perf, test, chore, revert \nNote that 'feat' and 'fix' will create new releases as will having BREAKING CHANGE: in the footer of your commit message."
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    }
   }
 }
