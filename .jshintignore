@@ -1,2 +1,3 @@
 test/vendor.js
 test/spec-manifest.js
+lib/backends/i18n-js.js

@@ -12,6 +12,7 @@
     "jquery": "latest"
   },
   "devDependencies": {
+    "jshint": "latest",
     "gulp": "latest",
     "mocha": "latest",
     "require-dir": "latest",
