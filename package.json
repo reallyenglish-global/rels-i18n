@@ -24,7 +24,7 @@
     "last-release-git-tag": "latest",
     "semantic-release": "^4.3.5",
     "validate-commit-msg": "^2.6.1",
-    "rels-gulp": "git+ssh://git@github.com/reallyenglish/rels-gulp#v1.0.2"
+    "rels-gulp": "git+ssh://git@github.com/reallyenglish/rels-gulp#v2.1.1"
   },
   "engine-strict" : true,
   "engines": {
