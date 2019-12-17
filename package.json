@@ -36,10 +36,9 @@
     "gulp": "4",
     "husky": "^3.0.0",
     "lolex": "latest",
-    "natives": "^1.1.6",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
-    "rels-gulp": "git+ssh://git@github.com/reallyenglish/rels-gulp.git#v5.1.0",
+    "rels-gulp": "git+ssh://git@github.com/reallyenglish/rels-gulp.git#v5.1.4",
     "semantic-release": "^15.13.25",
     "sinon": "^7",
     "sinon-chai": "^3",
@@ -52,8 +51,7 @@
   },
   "scripts": {
     "test": "gulp test --exit",
-    "prepare": "cd node_modules/rels-gulp && npm run build && cd ../../",
-    "format": "prettier -c lib/**/*{.js*,.scss}",
+    "format": "prettier -c lib/rels-i18n.js",
     "lint": "eslint lib/rels-i18n.js"
   },
   "release": {
