@@ -1,5 +1,5 @@
 # RELS i18n
-[![Build Status](https://travis-ci.com/reallyenglish/rels-i18n.svg?token=nQpkqttSTJftx5LczSUb&branch=master)](https://travis-ci.com/reallyenglish/rels-web)
+[![Build Status](https://travis-ci.com/reallyenglish-global/rels-i18n.svg?token=nQpkqttSTJftx5LczSUb&branch=master)](https://travis-ci.com/reallyenglish/rels-web)
 
 Proof of concept for Rails i18n -> JS i18n
 
