@@ -1,3 +1,4 @@
+package-lock.json
 node_modules/*
 test/spec-manifest.js
 test/vendor.js
