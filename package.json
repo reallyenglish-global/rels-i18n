@@ -2,7 +2,7 @@
   "name": "rels-i18n",
   "version": "1.0.0",
   "description": "rels-i18n",
-  "main": "./lib/rels-i18n.js",
+  "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/reallyenglish-global/rels-i18n"
@@ -12,35 +12,7 @@
     "jquery": "latest"
   },
   "devDependencies": {
-    "@babel/cli": "~7.7.7",
-    "@babel/core": "~7.7.7",
-    "@babel/preset-env": "~7.7.7",
-    "@babel/register": "~7.7.7",
-    "@commitlint/cli": "^8.3.4",
-    "@commitlint/config-conventional": "^8.3.4",
-    "babel-eslint": "^10.0.3",
-    "babelify": "^10",
-    "chai": "4.1.2",
-    "core-js": "^3",
-    "eslint": "^6.5.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-chai-expect": "^2.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-mocha": "^6.1.1",
-    "eslint-plugin-prettier": "^3.1.0",
-    "gulp": "4",
-    "husky": "^3.0.0",
-    "jsdom": "^15.1.1",
-    "jsdom-global": "^3.0.2",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^1.18.2",
-    "rels-gulp": "git+ssh://git@github.com/reallyenglish-global/rels-gulp.git#v5.2.1",
-    "semantic-release": "^15.13.25",
-    "sinon": "^7",
-    "sinon-chai": "^3",
-    "underscore": "latest"
+    "rels-gulp": "git+ssh://git@github.com/reallyenglish-global/rels-gulp.git#v5.2.5"
   },
   "engine-strict": true,
   "engines": {
@@ -49,8 +21,10 @@
   },
   "scripts": {
     "test": "gulp test --exit",
-    "format": "prettier -c lib/rels-i18n.js",
-    "lint": "eslint lib/rels-i18n.js"
+    "format": "prettier -c \"lib/**/*{.js*,.scss}\"",
+    "lint": "eslint lib",
+    "build": "./node_modules/.bin/babel ./lib --out-dir dist",
+    "postinstall": "npm run build"
   },
   "browserify": {
     "transform": [

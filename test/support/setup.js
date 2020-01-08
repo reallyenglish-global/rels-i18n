@@ -50,4 +50,3 @@ if (typeof window !== 'undefined') {
   window.expect = chai.expect
   window.sinon = sinon
 }
-
