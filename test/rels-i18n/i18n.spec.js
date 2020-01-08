@@ -32,7 +32,7 @@ describe('i18n', function() {
     })
   })
 
-  describe('adding to the existing translcations', function() {
+  describe('adding to the existing translations', function() {
     before(function() {
       i18n.setLocale('en')
 
