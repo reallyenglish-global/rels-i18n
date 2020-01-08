@@ -52,10 +52,6 @@
     "format": "prettier -c lib/rels-i18n.js",
     "lint": "eslint lib/rels-i18n.js"
   },
-  "release": {
-    "getLastRelease": "./node_modules/last-release-git-tag/index.js",
-    "debug": false
-  },
   "browserify": {
     "transform": [
       [
