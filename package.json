@@ -12,7 +12,7 @@
     "jquery": "latest"
   },
   "devDependencies": {
-    "rels-gulp": "git+ssh://git@github.com/reallyenglish-global/rels-gulp.git#v5.2.5"
+    "rels-gulp": "git+ssh://git@github.com/reallyenglish-global/rels-gulp.git#v5.2.6"
   },
   "engine-strict": true,
   "engines": {
