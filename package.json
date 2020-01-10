@@ -2,7 +2,7 @@
   "name": "rels-i18n",
   "version": "1.0.0",
   "description": "rels-i18n",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/reallyenglish-global/rels-i18n"
@@ -22,8 +22,11 @@
   "scripts": {
     "test": "gulp test --exit",
     "format": "prettier -c \"lib/**/*{.js*,.scss}\"",
-    "lint": "eslint lib",
-    "build": "./node_modules/.bin/babel ./lib --out-dir dist",
-    "postinstall": "npm run build"
+    "lint": "eslint lib"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   }
 }

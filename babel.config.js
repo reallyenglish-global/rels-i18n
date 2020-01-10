@@ -15,7 +15,7 @@ const config = {
         },
         useBuiltIns: 'usage',
         corejs: {
-          version: '3.2',
+          version: '3',
           proposals: 'true',
         },
       },
