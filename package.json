@@ -14,7 +14,7 @@
   "scripts": {
     "test": "rels-scripts test",
     "format": "rels-scripts format",
-    "lint": "rels-script lint",
+    "lint": "rels-scripts lint",
     "prepare": "rels-scripts init"
   }
 }
