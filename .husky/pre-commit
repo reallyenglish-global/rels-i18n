@@ -1,5 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-export CI=true
-/Users/randy/re-global/rels-scripts/node_modules/npm-run-all/bin/run-p/index.js test lint format
