@@ -5,9 +5,9 @@
  * For now, any changes can just be copied into backends/i18n-js straight from the repo - we could
  * also consider copying the code and modifying our own version
  */
-var Backend = require('./backends/i18n-js')
+const Backend = require('./backends/i18n-js')
 
-var i18n = {
+const i18n = {
   addLocaleData(data) {
     const { translations } = Backend
     Object.keys(data).forEach((incomingKey) => {
@@ -47,4 +47,7 @@ var i18n = {
 }
 
 Backend.fallbacks = true
-module.exports = i18n
+export default i18n
+if (process.env && process.env.NODE_ENV === 'development') {
+  window.i18n = i18n
+}
