@@ -2,12 +2,11 @@ language: node_js
 dist: xenial
 notifications:
   email: false
-node_js:
-  - '12'
+node_js: node
 script:
-  - run-p test lint format
+  - npm exec -- run-p test lint format
 after_success:
-  - semantic-release
+  - npm exec -- semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/

@@ -6,11 +6,13 @@
  * also consider copying the code and modifying our own version
  */
 var Backend = require('./backends/i18n-js')
-var $ = require('jquery')
 
 var i18n = {
   addLocaleData(data) {
-    $.extend(true, Backend.translations, data)
+    const { translations } = Backend
+    Object.keys(data).forEach((incomingKey) => {
+      translations[incomingKey] = Object.assign(translations[incomingKey] || {}, data[incomingKey])
+    })
   },
 
   start(options) {
