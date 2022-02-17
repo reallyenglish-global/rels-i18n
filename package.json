@@ -2,7 +2,7 @@
   "name": "rels-i18n",
   "version": "1.0.0",
   "description": "rels-i18n",
-  "main": "./src/index.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/reallyenglish-global/rels-i18n"
@@ -11,24 +11,13 @@
   "dependencies": {
     "rels-scripts": "git+ssh://git@github.com/reallyenglish-global/rels-scripts.git"
   },
+  "files": ["src"],
   "scripts": {
     "test": "rels-scripts test",
     "format": "rels-scripts format",
     "lint": "rels-scripts lint",
     "prepare": "rels-scripts init",
     "start": "rels-scripts start"
-  },
-  "browswerslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "browserslist": {
     "production": [
