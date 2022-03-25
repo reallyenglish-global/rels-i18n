@@ -23,6 +23,13 @@ describe('i18n', () => {
         i18n.setLocale('jp')
         expect(i18n.t('greeting')).to.eql('こんにちは!')
       })
+
+      it('updates the documentElement lang attribute', () => {
+        i18n.setLocale('en')
+        expect(document.documentElement.getAttribute('lang')).to.eql('en')
+        i18n.setLocale('fr')
+        expect(document.documentElement.getAttribute('lang')).to.eql('fr')
+      })
     })
   })
 

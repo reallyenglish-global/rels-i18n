@@ -22,6 +22,7 @@ const i18n = {
 
   setLocale(locale) {
     Backend.locale = locale
+    document.documentElement.setAttribute('lang', locale)
   },
 
   setLocaleData(data) {

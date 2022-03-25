@@ -2,3 +2,7 @@ node_modules
 .DS_Store
 .vscode
 .husky
+.localeapp/log.yml
+.tmp/localeapp/*.yml
+.tmp/localeapp/*.yml
+.tmp/*.yml

@@ -7,17 +7,33 @@
     "type": "git",
     "url": "https://github.com/reallyenglish-global/rels-i18n"
   },
+  "engines": {
+    "node": ">=14"
+  },
   "license": "UNLICENSED",
   "dependencies": {
+    "chalk": "^4.1.2",
     "rels-scripts": "git+ssh://git@github.com/reallyenglish-global/rels-scripts.git"
   },
-  "files": ["src"],
+  "bin": {
+    "rels-i18n": "bin/rels-i18n.js"
+  },
+  "files": [
+    ".tmp",
+    ".localeapp",
+    "config",
+    "scripts",
+    "bin",
+    "src"
+  ],
   "scripts": {
     "test": "rels-scripts test",
     "format": "rels-scripts format",
     "lint": "rels-scripts lint",
     "prepare": "rels-scripts init",
-    "start": "rels-scripts start"
+    "start": "rels-scripts start",
+    "build": "rels-scripts build",
+    "update": "./.bin/rels-i18n.js update"
   },
   "browserslist": {
     "production": [
