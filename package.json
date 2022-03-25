@@ -7,9 +7,6 @@
     "type": "git",
     "url": "https://github.com/reallyenglish-global/rels-i18n"
   },
-  "engines": {
-    "node": ">=14"
-  },
   "license": "UNLICENSED",
   "dependencies": {
     "chalk": "^4.1.2",
