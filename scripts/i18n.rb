@@ -124,17 +124,17 @@ def write_manifest
 
   helper = <<-i18n
  const i18n = {
-   configure({ locale = 'en' }) {
+  configure({ locale = 'en' }) {
     RelsI18n.setLocale(locale)
-   },
+  },
 
-   t(key, options) {
-     return RelsI18n.t('#{package['name']}.' + key, options)
-   },
+  t(key, options) {
+    return RelsI18n.t('#{package['name']}.' + key, options)
+  },
 
-   strftime(date, format) {
-     return RelsI18n.strftime(date, format)
-   },
+  strftime(date, format) {
+    return RelsI18n.strftime(date, format)
+  },
 
   strftimeWithoutTimezone(date, format) {
     return RelsI18n.strftimeWithoutTimezone(date, format)
