@@ -2,7 +2,8 @@ language: node_js
 dist: xenial
 notifications:
   email: false
-node_js: node
+node_js: 
+  - 17
 script:
   - npm exec -- run-p test lint format
 after_success:
