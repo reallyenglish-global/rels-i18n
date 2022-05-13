@@ -123,7 +123,7 @@ def write_manifest
   output << "\n"
 
   helper = <<-i18n
- const i18n = {
+const i18n = {
   configure({ locale = 'en' }) {
     RelsI18n.setLocale(locale)
   },
