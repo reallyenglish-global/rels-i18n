@@ -38,15 +38,16 @@ function localeappIsInstalled() {
   }
 
   if (installed.status !== 0) {
-    process.exit(installed.status)
+    console.log(chalk.red('error occurred while looking for the localeapp gem'))
+    return false
   }
 
   return installed.stdout.trim() === 'true'
 }
 
 if (!localeappIsInstalled()) {
-  console.log(chalk.yellow('localeapp gem is not installed!\n'))
-  console.log('please use `gem install localeapp` to install localeapp')
+  console.log(chalk.yellow('localeapp gem not found!\n'))
+  console.log('try `gem install localeapp`')
   process.exit(1)
 }
 
