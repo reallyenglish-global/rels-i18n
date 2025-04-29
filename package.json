@@ -10,7 +10,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "chalk": "^4.1.2",
-    "rels-scripts": "git+ssh://git@github.com/reallyenglish-global/rels-scripts.git#v1.0.2"
+    "rels-scripts": "git+ssh://git@github.com/reallyenglish-global/rels-scripts.git#v1.0.15"
   },
   "bin": {
     "rels-i18n": "bin/rels-i18n.js"
