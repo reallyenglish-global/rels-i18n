@@ -30,7 +30,9 @@
     "prepare": "rels-scripts init",
     "start": "rels-scripts start",
     "build": "rels-scripts build",
-    "update": "./.bin/rels-i18n.js update"
+    "update": "rels-i18n update",
+    "i18n:check": "rels-i18n check",
+    "i18n:generate": "rels-i18n generate"
   },
   "browserslist": {
     "production": [

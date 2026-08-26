@@ -30,9 +30,24 @@ structured. If you can follow the following two rules, localization will just 'w
 }
 ```
 
+## Offline validation and generation
+
+Validate locale source and generated output without credentials, Ruby, or network access:
+
+```shell
+npm exec -- rels-i18n check
+npm exec -- rels-i18n generate
+```
+
+`check` validates `src/i18n/master.json`, locale filenames and namespaces, generated identifier
+collisions, and drift in `src/i18n/index.js`. `generate` rewrites only the generated index.
+
 ## Updating locale data
 
-In order to update locals `npm exec -- rels-i18n update`
+In order to synchronize with Localeapp, use `npm exec -- rels-i18n update`.
+
+This is the credentialed remote workflow and requires `LOCALEAPP_API_KEY`, the Localeapp Ruby gem,
+and network access. It is intentionally separate from offline `check` and `generate`.
 
 This will push up any changes you made to master.json since the last update and pull down any new
 localizations. json data and a new service object are created under src/i18n - however the only file

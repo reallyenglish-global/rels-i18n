@@ -3,7 +3,7 @@
 
 const spawnSync = require('child_process').spawnSync
 
-const SCRIPTS = ['update']
+const SCRIPTS = ['update', 'check', 'generate']
 const args = process.argv.slice(2)
 
 const index = args.findIndex((arg) => SCRIPTS.includes(arg))
@@ -14,7 +14,8 @@ if (!task) {
   process.exit(1)
 }
 
-args.splice(index, 1, require.resolve('../scripts/' + task))
+const script = task === 'update' ? '../scripts/update' : '../scripts/offline'
+args.splice(index, 1, require.resolve(script))
 const childProcess = spawnSync(process.execPath, args, { stdio: 'inherit' })
 
 if (childProcess.signal) {
